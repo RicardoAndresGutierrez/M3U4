@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ejercicio 1 M3U4</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body class="fondo">
+
+    <div class="contenedor">
+        <button class="boton" id="rojo"></button>
+        <button class="boton" id="azul"></button>
+        <button class="boton" id="verde"></button>
+    </div>
+
+    <script>
+        const fondo = document.getElementsByClassName('fondo')[0];
+        const botonrojo = document.getElementById('rojo');
+        const botonazul = document.getElementById('azul');
+        const botonverde = document.getElementById('verde');
+
+        botonrojo.addEventListener('click', function () {
+            fondo.classList.toggle('red'), fondo.classList.remove('blue', 'green');
+        });
+
+        botonazul.addEventListener('click', function () {
+            fondo.classList.toggle('blue'), fondo.classList.remove('red', 'green');
+        });
+
+        botonverde.addEventListener('click', function () {
+            fondo.classList.toggle('green'), fondo.classList.remove('red', 'blue');
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 M3U4</title>
+</head>
+
+<body>
+
+    <h1>CONTADOR DE CARACTERES</h1>
+
+    <form>
+
+        <p>
+            <label for="">Mensaje: </label><textarea name="" id="texto" cols="30" rows="10"></textarea>
+        </p>
+        <hr>
+        <div>
+            <p> Caracteres: <span id="contador"></span>
+            </p>
+        </div>
+
+    </form>
+
+    <script>
+        var texto = document.getElementById('texto');
+        var contador = document.getElementById('contador');
+        texto.addEventListener('keyup', function () {
+            contador.innerText = texto.value.length;
+        }
+        )
+    </script>
+</body>
+
+</html>

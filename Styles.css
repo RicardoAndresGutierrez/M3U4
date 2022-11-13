@@ -1,0 +1,42 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.boton {
+    width: 200px;
+    height: 200px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#rojo {
+    background-color: red;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#verde {
+    background-color: green;
+}
+
+.fondo {
+    background: lightcyan;
+}
+
+.fondo.red {
+    background-color: red;
+}
+
+.fondo.blue {
+    background: blue;
+}
+
+.fondo.green {
+    background: green;
+}
